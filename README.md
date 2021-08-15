@@ -32,7 +32,7 @@ The pictures used are from CT scan database. The Data is from the VIA and ELCAP 
 2)	Image segmentation:
 This is a crucial process for most image analysis subsequent tasks. Segmentation partitions image into constituent regions or objects. The goal here is to simplify or change the representation of image such that it is more meaningful and easier to analyse. Algorithm for segmentation is based on two properties: discontinuity and similarity. Discontinuity is to divide image into similar regions like in edges in an image. Similarity category is based on partitioning image into similar regions according to predefined criterion.
 
-      a) Image segmentation by region growing:
+            a) Image segmentation by region growing:
   The procedure to extend the covered area by collecting pixels or sub-regions based on predetermined criteria is known as region growing. The approach is to initiate a set point and then expand the area surrounding the point; the area has same range of colour or grey level. The below figure shows segmention by region growing method:
   
    ![image](https://user-images.githubusercontent.com/70322066/129493648-ad982aef-5f7c-4010-a1e0-69da1ba0a86d.png)
@@ -45,6 +45,7 @@ This is a crucial process for most image analysis subsequent tasks. Segmentation
 
       c) Image segmentation by marker controlled watershed with masking:
    Segmentation with marker controlled watershed with masking method is the same process as above with additional masking which marks the area that contains the target object at the right and left lung.This figure shows Segmentation by marker controlled watershed with masking method.
+   
    ![image](https://user-images.githubusercontent.com/70322066/129493723-5f31fc02-990c-4051-8434-e3b4f763c63b.png)
 
 
