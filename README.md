@@ -6,6 +6,8 @@
 ## 3) Methods and result
 ## 4) Analysis
 ## 5) Conclusion
+## 6) License
+## 7) References
 
 ## Introduction
 Lung cancer is now one of the deadliest cancers worldwide. However, the early detection of lung cancer significantly improves survival rate. Various diagnostic procedures are used by physicians, in connection, for the early diagnosis of malignant lung nodules, such as clinical settings, computed tomography (CT) scan analysis (morphological assessment), positron emission tomography (PET) (metabolic assessments), and needle prick biopsy analysis . However, mostly invasive methods such as biopsies or surgeries are used by healthcare practitioners to differentiate between benign and malignant lung nodules. The earlier the detection, the higher is the possibility of successful treatment This accounts for an expected 9.6 million passing or one of every six deaths from last three years. To be precise lung cancer represents 2.06 million cases and 1.76 million passing. Cancer cells can be carried away from lungs in blood, or lymph fluid that surrounds lung tissue. Lymph streams through lymphatic vessels, which drain into lymph nodes placed in lungs and in centre of the chest. Lung cancer often spreads towards the centre of chest as it is the natural flow of lymph. Cancer that initiates in lungs is known as primary lung cancer. There are multiple types of lung cancer and further they are separated in two main groups: small cell lung cancer and non-small lung cancer. An estimate of lung cancer found in males and in females due to smoking is 85% and 75% respectively. 
@@ -78,6 +80,9 @@ Table below shows the comparison of running time of region growing method and ma
 ## Conclusion
 
 After evaluating three methods of image segmentation for detecting lung cancer, such as Region Growing, Marker Controlled Watershed, and Marker Controlled Watershed with Masking, the results show that performance of Marker Controlled Watershed with masking method is the best in terms of segmentation result and running time. Therefore, I select Marker Controlled Watershed with masking method in image segmentation stage. Image quality and accuracy were the core factors of this research.
+
+## License
+For my current project on **Analyzing Image Processing Techniques for Lung Cancer Detection**, I have used Mozilla Public License Version 2.0 as my license so that the project can be shared and viewed publically.
 
 ## References
 [1] Lung Cancer Database, Available at: https://eddie.via.cornell.edu/cgibin/datac/signon.cgi
