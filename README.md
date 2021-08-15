@@ -48,9 +48,10 @@ This is a crucial process for most image analysis subsequent tasks. Segmentation
    
    ![image](https://user-images.githubusercontent.com/70322066/129493723-5f31fc02-990c-4051-8434-e3b4f763c63b.png)
 
+3) Waterhed Algorithm:
 
-4)	Waterhed Algorithm
-5)	Binarization
+The watershed is a classical algorithm used for segmentation, that is, for separating different objects in an image. a watershed is a transformation defined on a grayscale image. The name refers metaphorically to a geological watershed, or drainage divide, which separates adjacent drainage basins. The watershed transformation treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. The watershed algorithm treats pixels values as a local topography (elevation). The algorithm floods basins from the markers until basins attributed to different markers meet on watershed lines. In many cases, markers are chosen as local minima of the image, from which basins are flooded. First, we extract internal and external markers from CT scan images with the help of binary dilations and add them with a complete dark image using watershed methods. And it removes external noise from the image and gives a watershed marker of lungs and cancer cells. As we can see in the below figure watershed marker removes external noise and applies a binary mask on the image , black pixels in lungs represent cancer cells.
+4) Binarization
 
 
 
