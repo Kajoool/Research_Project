@@ -1,11 +1,11 @@
 # Analyzing Image Processing Techniques for Lung Cancer Detection
 
-# Table of Contents
-# 1) Introduction
-# 2) Data visualization
-# 3) Methods and result
-# 4) Analysis
-# 5) Conclusion
+## Table of Contents
+## 1) Introduction
+## 2) Data visualization
+## 3) Methods and result
+## 4) Analysis
+## 5) Conclusion
 
 ## Introduction
 Lung cancer is now one of the deadliest cancers worldwide. However, the early detection of lung cancer significantly improves survival rate. Various diagnostic procedures are used by physicians, in connection, for the early diagnosis of malignant lung nodules, such as clinical settings, computed tomography (CT) scan analysis (morphological assessment), positron emission tomography (PET) (metabolic assessments), and needle prick biopsy analysis . However, mostly invasive methods such as biopsies or surgeries are used by healthcare practitioners to differentiate between benign and malignant lung nodules. The earlier the detection, the higher is the possibility of successful treatment This accounts for an expected 9.6 million passing or one of every six deaths from last three years. To be precise lung cancer represents 2.06 million cases and 1.76 million passing. Cancer cells can be carried away from lungs in blood, or lymph fluid that surrounds lung tissue. Lymph streams through lymphatic vessels, which drain into lymph nodes placed in lungs and in centre of the chest. Lung cancer often spreads towards the centre of chest as it is the natural flow of lymph. Cancer that initiates in lungs is known as primary lung cancer. There are multiple types of lung cancer and further they are separated in two main groups: small cell lung cancer and non-small lung cancer. An estimate of lung cancer found in males and in females due to smoking is 85% and 75% respectively. 
