@@ -35,7 +35,7 @@ This is a crucial process for most image analysis subsequent tasks. Segmentation
       a) Image segmentation by region growing:
   The procedure to extend the covered area by collecting pixels or sub-regions based on predetermined criteria is known as region growing. The approach is to initiate a set point and then expand the area surrounding the point; the area has same range of colour or grey level. The below figure shows segmention by region growing method:
   
-            ![image](https://user-images.githubusercontent.com/70322066/129493648-ad982aef-5f7c-4010-a1e0-69da1ba0a86d.png)
+        ![image](https://user-images.githubusercontent.com/70322066/129493648-ad982aef-5f7c-4010-a1e0-69da1ba0a86d.png)
 
   b) Image segmentation by marker controlled watershed
   c) Image segmentation by marker controlled watershed with masking
