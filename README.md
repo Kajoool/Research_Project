@@ -24,6 +24,23 @@ After combining all images in a single subdirectory according to their image it 
 ![image](https://user-images.githubusercontent.com/70322066/129493458-b526ca10-ab55-4b65-8092-f89325dda885.png)
 
 ## Methods
+1)	Image acquisitions
+The pictures used are from CT scan database. The Data is from the VIA and ELCAP Public Access Dataset [1].
+
+![image](https://user-images.githubusercontent.com/70322066/129493623-6262c3c8-ed0e-436f-b1a5-a7630a443f09.png)
+
+2)	Image segmentation
+This is a crucial process for most image analysis subsequent tasks. Segmentation partitions image into constituent regions or objects. The goal here is to simplify or change the representation of image such that it is more meaningful and easier to analyse. Algorithm for segmentation is based on two properties: discontinuity and similarity. Discontinuity is to divide image into similar regions like in edges in an image. Similarity category is based on partitioning image into similar regions according to predefined criterion.
+
+  a) Image segmentation by region growing
+  The procedure to extend the covered area by collecting pixels or sub-regions based on predetermined criteria is known as region growing. The approach is to initiate a set point and then expand the area surrounding the point; the area has same range of colour or grey level. The below figure shows segmention by region growing method:
+  
+  ![image](https://user-images.githubusercontent.com/70322066/129493648-ad982aef-5f7c-4010-a1e0-69da1ba0a86d.png)
+
+  b) Image segmentation by marker controlled watershed
+  c) Image segmentation by marker controlled watershed with masking
+4)	Waterhed Algorithm
+5)	Binarization
 
 
 
