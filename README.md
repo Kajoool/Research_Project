@@ -49,9 +49,42 @@ This is a crucial process for most image analysis subsequent tasks. Segmentation
    ![image](https://user-images.githubusercontent.com/70322066/129493723-5f31fc02-990c-4051-8434-e3b4f763c63b.png)
 
 3) Waterhed Algorithm:
-
 The watershed is a classical algorithm used for segmentation, that is, for separating different objects in an image. a watershed is a transformation defined on a grayscale image. The name refers metaphorically to a geological watershed, or drainage divide, which separates adjacent drainage basins. The watershed transformation treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. The watershed algorithm treats pixels values as a local topography (elevation). The algorithm floods basins from the markers until basins attributed to different markers meet on watershed lines. In many cases, markers are chosen as local minima of the image, from which basins are flooded. First, we extract internal and external markers from CT scan images with the help of binary dilations and add them with a complete dark image using watershed methods. And it removes external noise from the image and gives a watershed marker of lungs and cancer cells. As we can see in the below figure watershed marker removes external noise and applies a binary mask on the image , black pixels in lungs represent cancer cells.
-4) Binarization
+
+![image](https://user-images.githubusercontent.com/70322066/129493795-3f3821a7-beaa-4c2f-8314-d0e10747d159.png)
+
+By doing this in total 1002 images with related labels were generated, which includes almost 5 patients CT scan data in which there are almost the same number of cancer and non-cancer patients.
+
+4) Binarization:
+The process of changing the colour of pixel values into two classes [2], such as black and white. On getting the quantity of black and white pixels on segmentation results, it was compared with a threshold value to determine the condition of lung. Below table 2  shows the result of detection from five sample patients through pixelization.
+
+![image](https://user-images.githubusercontent.com/70322066/129493878-eeeb0305-0b58-47cd-b692-f820ac93bfcf.png)
+
+![image](https://user-images.githubusercontent.com/70322066/129493890-150c0fa4-c423-44cc-80bd-890a6198953f.png)
+
+## Analysis
+
+Three Methods Segmentation Analysis:
+
+The analysis of three segmentation methods based on their success on segmentation results of target object can be seen in figure below. Figure 8 shows that two methods have successfully found the target object including a) region growing and c) marker controlled watershed with masking. On the other hand, b) marker controlled watershed segmentation has failed to get segmentation results since there is background surrounding the target object.
+
+![image](https://user-images.githubusercontent.com/70322066/129493921-7c0bc469-ca31-42f4-b0a4-998852e69c2c.png)
+
+Table below shows the comparison of running time of region growing method and marker controlled watershed segmentation with masking. Here marker controlled watershed method b) is not included in the comparison as it failed to get segmentation results. 
+
+![image](https://user-images.githubusercontent.com/70322066/129493925-452ef004-aa31-4a66-bf58-2c7b40942498.png)
+
+
+## Conclusion
+
+After evaluating three methods of image segmentation for detecting lung cancer, such as Region Growing, Marker Controlled Watershed, and Marker Controlled Watershed with Masking, the results show that performance of Marker Controlled Watershed with masking method is the best in terms of segmentation result and running time. Therefore, I select Marker Controlled Watershed with masking method in image segmentation stage. Image quality and accuracy were the core factors of this research.
+
+## References
+[1] Lung Cancer Database, Available at: https://eddie.via.cornell.edu/cgibin/datac/signon.cgi
+
+[2] Sarwinda D and Bustamam A 2016 Detection of Alzheimers disease using advanced local binary pattern from hippocampus and whole brain of MR images International Joint Conference on Neural Networks (IJCNN) IEEE pp 5051–5056
+
+
 
 
 
