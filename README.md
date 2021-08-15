@@ -35,10 +35,19 @@ This is a crucial process for most image analysis subsequent tasks. Segmentation
       a) Image segmentation by region growing:
   The procedure to extend the covered area by collecting pixels or sub-regions based on predetermined criteria is known as region growing. The approach is to initiate a set point and then expand the area surrounding the point; the area has same range of colour or grey level. The below figure shows segmention by region growing method:
   
-        ![image](https://user-images.githubusercontent.com/70322066/129493648-ad982aef-5f7c-4010-a1e0-69da1ba0a86d.png)
+   ![image](https://user-images.githubusercontent.com/70322066/129493648-ad982aef-5f7c-4010-a1e0-69da1ba0a86d.png)
 
-  b) Image segmentation by marker controlled watershed
-  c) Image segmentation by marker controlled watershed with masking
+       b) Image segmentation by marker controlled watershed:
+   The process to get segmentation by watershed method is as follows; calculate the distance gradient for edge detection and then mark the target object by using a morphological technique called opening by reconstruction and closing by reconstruction. The below figure shows segmentation by marker controlled watershed.
+   
+   ![image](https://user-images.githubusercontent.com/70322066/129493707-7c289dd8-f8b0-41ac-ab54-00c8105e3838.png)
+
+
+      c) Image segmentation by marker controlled watershed with masking:
+   Segmentation with marker controlled watershed with masking method is the same process as above with additional masking which marks the area that contains the target object at the right and left lung.This figure shows Segmentation by marker controlled watershed with masking method.
+   ![image](https://user-images.githubusercontent.com/70322066/129493723-5f31fc02-990c-4051-8434-e3b4f763c63b.png)
+
+
 4)	Waterhed Algorithm
 5)	Binarization
 
