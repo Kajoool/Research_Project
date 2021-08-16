@@ -8,9 +8,9 @@ Pricing
 Search
 Sign in
 Sign up
-impriyansh
+Kajoool
 /
-Lung-Nodule-Detection
+Research_Project
 22
 Code
 Issues
@@ -20,9 +20,9 @@ Projects
 Wiki
 Security
 Insights
-Lung-Nodule-Detection/segmentation/segmentationMask.m
-@impriyansh
-impriyansh Build 1
+Research_Project/segmentation/masking.m
+@Kajoool
+Kajoool Build 1
 Latest commit d702131 on Mar 12, 2018
  History
  1 contributor
@@ -30,7 +30,7 @@ Executable File  93 lines (70 sloc)  2.83 KB
   
 function maskImageVolume= segmentationMask( intialSegResult,volume_image)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   this fucntion is used to get the lung mask for the 3D input CT image and
+%   This fucntion is used to get the lung mask for the 3D input CT image and
 %   refine each slice to exclude the lobe boundary (other objecsts inside each slice) 
 %
 %   input:
@@ -40,15 +40,9 @@ function maskImageVolume= segmentationMask( intialSegResult,volume_image)
 %   output:
 %           maskImageVolume: the binary mask of segmentation result
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Author: Shiwen Shen
-%   Date: 09/28/2014
-%   Email: shiwenshen@ucla.edu
 %   Copy rignt: medical imaging informatics group, UCLA
-
-
-
 %%%%%%%%%%%%%%%%%%%%%
-%get lung lobe region
+%Get lung lobe region
 
 [width,longth,imageIndexTotal]=size(volume_image);
 maskImageVolume=intialSegResult;
@@ -61,9 +55,6 @@ end
 maskImageVolume=~maskImageVolume;
 maskImageVolume(~maskImageBodyRegion)=0;
 % maskImageVolume=maskImageVolume&(~airwayMask);
-
-
-
 
 % viewBinaryMask(maskImageVolume)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
