@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1) [Introduction](#Introduction)
-2) [Data visualization](#Data visualization)
-3) [Methods and result](#Methods and result)
+2) [Data_visualization](#Data_visualization)
+3) [Methods_Results](#Methods_Results)
 4) [Analysis](#Analysis)
 5) [Conclusion](#Conclusion)
 6) [License](#License)
@@ -16,7 +16,7 @@ The method of early detection of cancer plays a crucial role to prevent cancer c
 
 Visually identifying and examining these images for potential abnormalities is a challenging and time consuming task due to the large amount of information that needs to be processed, and the short amount of time given. The subject of medical image mining is currently an upcoming topic and shows a lot of research potential in the area of computational intelligence. By auto-analysing a patient’s records and images through image processing techniques, we would reduce the risk of human error in module detection. By applying a combination of techniques in data pre-processing, feature extraction, and classification, we ultimately seek to increase the accuracy rate of cancer detection, while simultaneously reducing the false positive diagnosis rate. Many researchers proposed many solutions and challenges of different phases of computer aided system to detect the lung cancer in early stages and give the facts about the lung cancer. 
 
-## Data Visualization
+## Data_Visualization
 Visualization of dataset is an important part of training; it gives better understanding of dataset. But CT scan images are hard to visualize for a normal pc or any window browser. Therefore we use the pydicom library to solve this problem. The Pydicom library gives an image array and metadata information stored in CT images like patient’s name, patient’s id, patient’s birth date, image position, image number, doctor’s name, doctor’s birth date etc. Luna16 dataset is a directory which contains many subdirectories named on patient’s ids. A complete subdirectory is 3d image of lungs which is stored in around 180 2d image slices according to their image number.
 
 ![image](https://user-images.githubusercontent.com/70322066/129493442-64383928-ab89-40de-8a85-2bdefe802eb0.png)
@@ -25,7 +25,7 @@ After combining all images in a single subdirectory according to their image it 
 
 ![image](https://user-images.githubusercontent.com/70322066/129493458-b526ca10-ab55-4b65-8092-f89325dda885.png)
 
-## Methods
+## Methods_Results
 1)	Image acquisitions:
 The pictures used are from CT scan database. The Data is from the VIA and ELCAP Public Access Dataset [1].
 
