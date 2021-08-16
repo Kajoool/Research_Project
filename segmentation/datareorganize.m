@@ -17,7 +17,7 @@ cd(directory);
 d = ls('*.dcm');
 m = size(d,1);
 
-%get the spacing information
+%Get the Spacing Information
 xyzSpacing=zeros(3,1);%row spacing, column spacing and z spacing
 metadata = dicominfo(d(1,:));
 [group, element] = dicomlookup('PixelSpacing');
@@ -28,7 +28,7 @@ zSpacing=metadata.(dicomlookup(group, element));
 xyzSpacing(3)=zSpacing;
 
 
-%get the reordered image data and position information
+%Get the Reordered Image Data and Position Information
 [group, element] = dicomlookup('InstanceNumber');
 [group1, element1] = dicomlookup('SliceLocation');
 sdata(m) = struct('imagename','','instance',0,'image','','SliceLocation','');
