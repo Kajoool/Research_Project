@@ -1,5 +1,4 @@
-function [volume_image,sliceLocationArray,xyzSpacing]=dataReorganize(directory)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function [volume_image,sliceLocationArray,xyzSpacing]=dataeorganize(directory)
 %   DATAREORGANIZE reorganize the dicom image in the directory
 %   using correct order and store the sorted images in a 3-D array
 %
@@ -11,10 +10,6 @@ function [volume_image,sliceLocationArray,xyzSpacing]=dataReorganize(directory)
 %                                  value
 %              xyzSpacing: spacing between the center of adjacent pixels; 
 %                          [row spacing,column spacing, z spacing]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Author: Shiwen Shen
-%   Date: 09/28/2014
-%   Email: shiwenshen@ucla.edu
 %   Copy rignt: medical imaging informatics group, UCLA
 
 
