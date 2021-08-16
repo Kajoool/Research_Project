@@ -1,5 +1,5 @@
 close all;
-I=imread('C:\Users\Shashwat\Desktop\Lung3.jpeg');
+I=imread('C:\Users\Kajol\Desktop\Lung3.jpeg');
 Io=rgb2gray(I);
 figure,imshow(Io),title('Original');
 baseFileName = 'Original.jpeg'; % Whatever....
