@@ -1,6 +1,7 @@
 # Analyzing Image Processing Techniques for Lung Cancer Detection
 
 ## Table of Contents
+[Introduction](Introduction)
 ## 1) Introduction
 ## 2) Data visualization
 ## 3) Methods and result
