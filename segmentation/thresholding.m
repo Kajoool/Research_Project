@@ -1,6 +1,6 @@
 function [ut, timet] = CMF3D_Cutcv(ur, lp, errb, ulab)
 
-% We minimize wrt c_in and c_out, as well as lambda
+% We minimize wrt c_in and c_out, as well as lamda
 % and now with adaptable errbound, having the effect that
 % lambda is not solved to such a high accuracy until c1 and c2 start to
 % converge.
@@ -98,7 +98,7 @@ innerloop=0;
 while (err_c(iter) > errb(2))
 
     %  if cs and ct are beginning to converge, tighten the convergence limit
-    % for lambda
+    % for lamda
     if err_c(iter) < c_convergence
         errb(1) = 5e-4;
     end
@@ -140,7 +140,7 @@ while (err_c(iter) > errb(2))
         divp = - pp2(1:rows,:,:) + pp2(2:rows+1,:,:) + pp1(:,2:cols+1,:) ...
         - pp1(:,1:cols,:) + pp3(:,:,2:heights+1) - pp3(:,:,1:heights);
 
-        % updata the source flow ps
+        % update the source flow ps
 
         pts = divp - u/cc + pt + 1/cc;
         Cs = abs(ur - ulab(1)).^beta;
